@@ -29,6 +29,19 @@ nav {
   padding: 1rem;
 }
 
+.content ul {
+  margin-bottom: auto;
+}
+
+.content img {
+  height: 25px;
+  width: 25px;
+}
+
+.content li {
+  list-style-type: none;
+}
+
 header {
   grid-row: 1 / 2;
   grid-column: 1 / 3;
