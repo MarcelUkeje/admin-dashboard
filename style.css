@@ -38,20 +38,39 @@ nav {
   padding: 1rem;
 }
 
+nav .nav-top {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+nav .nav-top img {
+  height: 3rem;
+  width: 3rem;
+}
+
 nav .content ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 10fr;
+  gap: 1rem;
+  margin-left: -1.7rem;
 }
 
-.content img {
-  height: 25px;
-  width: 25px;
+nav .content img {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
-.content li,
+nav .content li,
 li {
   list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 header {
