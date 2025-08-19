@@ -78,10 +78,66 @@ header {
   grid-column: 2 / 3;
   background-color: #dddd09;
   color: #7b057b;
+  padding: 1rem 1.5rem;
 }
 
 header .header-top {
+  display: grid;
+  grid-template-columns: 0.1fr 15fr 0.1fr 1fr 3fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+header .header-top input {
+  width: 85%;
+  border-radius: 1rem;
+  background-color: #ebebeb;
+  padding: 0.3rem;
+}
+
+header .header-top .me {
+  height: 2rem;
+  width: 2rem;
+}
+
+header .header-bottom {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-bottom .me {
+  height: 3rem;
+  width: 3rem;
+}
+
+header .header-bottom div > div > p:first-child {
+  font-size: 0.5rem;
+}
+
+header .header-bottom div > div > p:nth-child(2) {
+  font-size: 1.2rem;
+}
+
+header .header-bottom p {
+  font-weight: 900;
+}
+
+header .header-bottom > div {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+header .header-bottom .btn {
+  background-color: #7b057b;
+  color: #dddd09;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1rem;
 }
 
 main {
