@@ -7,51 +7,54 @@
     <title>Marcel's Admin Dashboard</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-top">
-            <img src="./images/view-dashboard.svg" alt="Page Logo" height="40" width="40">
-            <h1>Dashboard</h1>
-        </div>
-        <div class="content">
-            <ul>
-                <li><img src="./images/home.svg" alt=""><span>Home</span></li>
-                <li><img src="./images/profile.svg" alt=""><span>Profile</span></li>
-                <li><img src="./images/message-reply.svg" alt=""><span>Messages</span></li>
-                <li><img src="./images/history.svg" alt=""><span>History</span></li>
-                <li><img src="./images/tasks.svg" alt=""><span>Tasks</span></li>
-                <li><img src="./images/communities.svg" alt=""><span>Communities</span></li>
-                <li>&nbsp;</li>
-                <li><img src="./images/settings.svg" alt=""><span>Settings</span></li>
-                <li><img src="./images/support.svg" alt=""><span>Support</span></li>
-                <li><img src="./images/privacy.svg" alt=""><span>Privacy</span></li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <div class="header-top">
-            <img src="./images/search.svg" alt="">
-            <form role="search" class="search">
-                <input id="search-input" type="search"/>
-            </form>
-            <img src="./images/notification.svg" alt="">
-            <img src="./images/me.jpg" alt="" class="me">
-            <h2>Marcel Ukeje</h2>
-        </div>
-        <div class="header-bottom">
-            <div>
+    <div class="dashboard">
+        <nav>
+            <div class="nav-top">
+                <img src="./images/view-dashboard.svg" alt="Page Logo">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="content">
+                <ul>
+                    <li><img src="./images/home.svg" alt=""><span>Home</span></li>
+                    <li><img src="./images/profile.svg" alt=""><span>Profile</span></li>
+                    <li><img src="./images/message-reply.svg" alt=""><span>Messages</span></li>
+                    <li><img src="./images/history.svg" alt=""><span>History</span></li>
+                    <li><img src="./images/tasks.svg" alt=""><span>Tasks</span></li>
+                    <li><img src="./images/communities.svg" alt=""><span>Communities</span></li>
+                </ul>
+                <ul>
+                    <li><img src="./images/settings.svg" alt=""><span>Settings</span></li>
+                    <li><img src="./images/support.svg" alt=""><span>Support</span></li>
+                    <li><img src="./images/privacy.svg" alt=""><span>Privacy</span></li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <div class="header-top">
+                <img src="./images/search.svg" alt="">
+                <form role="search" class="search">
+                    <input id="search-input" type="search"/>
+                </form>
+                <img src="./images/notification.svg" alt="">
                 <img src="./images/me.jpg" alt="" class="me">
-                <div>
-                    <p>Hi there,</p>
-                    <p>Marcel Ukeje (@marcelo)</p>
+                <h2>Marcel Ukeje</h2>
+            </div>
+            <div class="header-bottom">
+                <div class="user-info">
+                    <img src="./images/me.jpg" alt="" class="me">
+                    <div class="welcome-message">
+                        <p>Hi there,</p>
+                        <p class="username">Marcel Ukeje (@marcelo)</p>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
                 </div>
             </div>
-            <div>
-                <button class="btn">New</button><button class="btn">Upload</button><button class="btn">Share</button>
-            </div>
-        </div>  
-    </header>
-    <main>
-        <div class="main-content">
+        </header>
+        <main class="main-content">
             <section class="projects-section">
                 <h3 class="projects-heading">Your Projects</h3>
                 <ul>
@@ -63,10 +66,10 @@
                             <div class="card-body">
                                 <p>A compact recipe manager for saving, tagging and browsing favourite dishes. Add ingredients, step-by-step instructions and attach a photo for each recipe.</p>
                             </div>
-                            <footer class="card-footer">
-                                <div class="card-actions">
-                                    <a href=""><img src="./images/star.svg" alt=""></a><a href=""><img src="./images/watch.svg" alt=""></a><a href=""><img src="./images/share.svg" alt=""></a>
-                                </div>
+                            <footer class="card-footer card-actions">
+                                    <a href=""><img src="./images/star.svg" alt=""></a>
+                                    <a href=""><img src="./images/watch.svg" alt=""></a>
+                                    <a href=""><img src="./images/share.svg" alt=""></a>
                             </footer>
                         </article>
                     </li>
@@ -78,10 +81,10 @@
                             <div class="card-body">
                                 <p>A responsive marketing landing page that demonstrates semantic layout, hero section and a contact call-to-action. Built to practice accessibility and responsive typography.</p>
                             </div>
-                            <footer class="card-footer">
-                                <div class="card-actions">
-                                    <a href=""><img src="./images/star.svg" alt=""></a><a href=""><img src="./images/watch.svg" alt=""></a><a href=""><img src="./images/share.svg" alt=""></a>
-                                </div>
+                            <footer class="card-footer card-actions">
+                                    <a href=""><img src="./images/star.svg" alt=""></a>
+                                    <a href=""><img src="./images/watch.svg" alt=""></a>
+                                    <a href=""><img src="./images/share.svg" alt=""></a>
                             </footer>
                         </article>
                     </li>
@@ -93,10 +96,10 @@
                             <div class="card-body">
                                 <p>A small interactive game that matches you against a simple JS opponent. Tracks the score, displays round results and supports click controls.</p>
                             </div>
-                            <footer class="card-footer">
-                                <div class="card-actions">
-                                    <a href=""><img src="./images/star.svg" alt=""></a><a href=""><img src="./images/watch.svg" alt=""></a><a href=""><img src="./images/share.svg" alt=""></a>
-                                </div>
+                            <footer class="card-footer card-actions">
+                                    <a href=""><img src="./images/star.svg" alt=""></a>
+                                    <a href=""><img src="./images/watch.svg" alt=""></a>
+                                    <a href=""><img src="./images/share.svg" alt=""></a>
                             </footer>
                         </article>
                     </li>
@@ -108,10 +111,10 @@
                             <div class="card-body">
                                 <p>A drawing sketchpad built on the HTML canvas. Choose grid size, toggle grid snapping, and export a screenshot of your drawing.</p>
                             </div>
-                            <footer class="card-footer">
-                                <div class="card-actions">
-                                    <a href=""><img src="./images/star.svg" alt=""></a><a href=""><img src="./images/watch.svg" alt=""></a><a href=""><img src="./images/share.svg" alt=""></a>
-                                </div>
+                            <footer class="card-footer card-actions">
+                                    <a href=""><img src="./images/star.svg" alt=""></a>
+                                    <a href=""><img src="./images/watch.svg" alt=""></a>
+                                    <a href=""><img src="./images/share.svg" alt=""></a>
                             </footer>
                         </article>
                     </li>
@@ -123,10 +126,10 @@
                             <div class="card-body">
                                 <p>A compact, accessible calculator that supports basic arithmetic with keyboard input and click/touch buttons. Includes a memory store and clear/error handling.</p>
                             </div>
-                            <footer class="card-footer">
-                                <div class="card-actions">
-                                    <a href=""><img src="./images/star.svg" alt=""></a><a href=""><img src="./images/watch.svg" alt=""></a><a href=""><img src="./images/share.svg" alt=""></a>
-                                </div>
+                            <footer class="card-footer card-actions">
+                                    <a href=""><img src="./images/star.svg" alt=""></a>
+                                    <a href=""><img src="./images/watch.svg" alt=""></a>
+                                    <a href=""><img src="./images/share.svg" alt=""></a>
                             </footer>
                         </article>
                     </li>
@@ -138,10 +141,10 @@
                             <div class="card-body">
                                 <p>An accessible signup form demonstrating client-side validation patterns and helpful error messaging. Includes live validation for email, password strength and matching confirmation.</p>
                             </div>
-                            <footer class="card-footer">
-                                <div class="card-actions">
-                                    <a href=""><img src="./images/star.svg" alt=""></a><a href=""><img src="./images/watch.svg" alt=""></a><a href=""><img src="./images/share.svg" alt=""></a>
-                                </div>
+                            <footer class="card-footer card-actions">
+                                    <a href=""><img src="./images/star.svg" alt=""></a>
+                                    <a href=""><img src="./images/watch.svg" alt=""></a>
+                                    <a href=""><img src="./images/share.svg" alt=""></a>
                             </footer>
                         </article>
                     </li>
@@ -150,23 +153,19 @@
             <aside class="right-sidebar">
                 <section class="announcements">
                     <h3 class="announcements-heading">Announcements</h3>
-
-                    <div>
-                        <ul class="announcements-list">
+                    <ul class="announcements-list">
                             <li class="announcement">
                                 <article>
                                 <h4>Site Maintenance</h4>
                                 <p>Planned maintenance on Sunday, Aug 24 from 02:00–04:00 PM. During this window the editor and uploads may be temporarily unavailable. No data will be lost; all changes are preserved and synchronized after the restart.</p>
                                 </article>
                             </li>
-
                             <li class="announcement">
                                 <article>
                                 <h4>Community Share Day</h4>
-                                <p>Share your current Odin Project builds on Friday at 18:00. Presentations are informal — 5–7 minute demos, then feedback. Sign up if you want to demo and we’ll reserve a spotlight sl</p>
+                                <p>Share your current Odin Project builds on Friday at 18:00. Presentations are informal — 5–7 minute demos, then feedback. Sign up if you want to demo and we’ll reserve a spotlight.</p>
                                 </article>
                             </li>
-
                             <li class="announcement">
                                 <article>
                                 <h4>Updated Privacy Policy</h4>
@@ -174,46 +173,42 @@
                                 </article>
                             </li>
                         </ul>
-                    </div>
                 </section>
-
                 <section class="trending">
                     <h3 class="trending-heading">Trending</h3>
-                    <div>
-                        <ul class="trending-list">
-                            <li class="trending-item">
-                                <img src="./images/bear.png" alt="">
-                                <div>
-                                    <p>@tegan</p>
-                                    <p>World Peace Builder</p>
-                                </div>
-                            </li>
-                            <li class="trending-item">
-                                <img src="./images/chicken.png" alt="">
-                                <div>
-                                    <p>@kendall</p>
-                                    <p>Life Changing App</p>
-                                </div>
-                            </li>
-                            <li class="trending-item">
-                                <img src="./images/rhinoceros.svg" alt="">
-                                <div>
-                                    <p>@alex</p>
-                                    <p>No Traffic Maker</p>
-                                </div>
-                            </li>
-                            <li class="trending-item">
-                                <img src="./images/toucan.svg" alt="">
-                                <div>
-                                    <p>@morgan</p>
-                                    <p>Super Cool Project</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="trending-list">
+                        <li class="trending-item">
+                            <img src="./images/bear.png" alt="">
+                            <div>
+                                <p>@tegan</p>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <img src="./images/chicken.png" alt="">
+                            <div>
+                                <p>@kendall</p>
+                                <p>Life Changing App</p>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <img src="./images/rhinoceros.svg" alt="">
+                            <div>
+                                <p>@alex</p>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <img src="./images/toucan.svg" alt="">
+                            <div>
+                                <p>@morgan</p>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </li>
+                    </ul>
                 </section>
             </aside>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 </html>
